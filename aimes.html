@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32X32" href="./imagens/favicon-32x32.png">
-    <title>ANIMESFLIX </title>
+    <title>ANIMESFLIX</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
 </head>
 <body>
     <header id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1><a href="#inicio">ANIMESFLIX</a></h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-center w-100" id="menu">
@@ -44,70 +43,74 @@
             </div>
         </div>
     </header>
-        <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
-            <section id="inicio" class="p-0">
-                <div class="carousel carousel-fade slide" id="carousel-exemplo" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div data-bs-interval="3000" class="carousel-item active">
-                            <img src="./Images/DragonBallSuper.jpe" alt="capa da Dragon Ball Super">
-                            <div class="carousel-caption">
-                                <h2>Dragon Ball Super</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000" class="carousel-item">
-                            <img src="/Images/OsCavaleirodoZodiacoOmega.jpe" alt="capa do Os Cavaleiro do Zodiaco Omega">
-                            <div class="carousel-caption">
-                                <h2>Os Cavaleiro do Zodiaco Omega</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000" class="carousel-item">
-                            <img src="./Images/FullmetalAlchemistBrotherhood.jpe" alt="capa da serie six feet under">
-                            <div class="carousel-caption">
-                                <h2>Fullmetal Alchemist Brotherhood</h2>
-                            </div>
+    <div class="container" data-spy="scroll" data-target="#cabecalho">
+        <section id="inicio" class="p-0">
+            <div id="carousel-exemplo" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-exemplo" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-exemplo" data-slide-to="1"></li>
+                    <li data-target="#carousel-exemplo" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/DragonBallSuper.jpe" alt="capa da Dragon Ball Super" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>Dragon Ball Super</h2>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                    <div class="carousel-indicators">
-                        <button class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" type="button"></button>
-                        <button data-bs-target="#carousel-exemplo" data-bs-slide-to="1" type="button"></button>
-                        <button data-bs-target="#carousel-exemplo" data-bs-slide-to="2" type="button"></button>
+                    <div class="carousel-item">
+                        <img src="./Images/OsCavaleirodoZodiacoOmega.jpe" alt="capa do Os Cavaleiro do Zodiaco Omega" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>Os Cavaleiro do Zodiaco Omega</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/FullmetalAlchemistBrotherhood.jpe" alt="capa da serie six feet under" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h2>Fullmetal Alchemist Brotherhood</h2>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="filmes-series">
-                <h2 class="mb-5">Animess</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card">
-                            <img src="./Images/Pokemon.webp" alt="capa do pokemon">
-                            <div class="card-body">
-                                <h4 class="card-title">Pokemon</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                </p>
-                                <ul class="d-flex p-0">
-                                    <li class="lista-de-botoes">
-                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
-                                    </li>
-                                    <li class="lista-de-botoes">
-                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
-                                    </li>
-                                    <li class="lista-de-botoes">
-                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
-                                    </li>
-                                    <li class="lista-de-botoes">
-                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                <a class="carousel-control-prev" href="#carousel-exemplo" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-exemplo" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <section id="filmes-series">
+        <h2 class="mb-5">Animes</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="./Images/Pokemon.webp" alt="capa do pokemon">
+                        <div class="card-body">
+                            <h4 class="card-title">Pokemon</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            </p>
+                            <ul class="d-flex p-0">
+                                <li class="lista-de-botoes">
+                                    <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                </li>
+                                <li class="lista-de-botoes">
+                                    <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                </li>
+                                <li class="lista-de-botoes">
+                                    <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                </li>
+                                <li class="lista-de-botoes">
+                                    <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <img src="./Images/Naruto.webp" alt="capa do naruto">
@@ -162,7 +165,7 @@
                         <div class="card">
                             <img src="./Images/SamuraiWarrions.jpg" alt="capa do samurai warrions">
                             <div class="card-body">
-                                <h4 class="card-title">Samurai Warrions</h4>
+                                <h4 class="card-title">Yoroiden Samurai Troopers</h4>
                                 <p class="card-text">
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 </p>
@@ -241,27 +244,24 @@
                     <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active">Pokemon</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link">Naruto</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link">Yu Yu Hakusho</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link">Samurai Warrions</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link">Yoroiden Samurai Troopers</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba5" class="nav-link">Shurato</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba6" class="nav-link">Aventura Digimon</button>
                     <div class="tab-content p-3">
                         <div id="aba1" class="tab-pane active">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, inventore debitis cum accusantium architecto nobis. Dolores quaerat odio atque numquam nostrum rerum quae, cupiditate excepturi sint? Dolores maxime repellendus harum?
+                            Pokémon: O Anime. O anime conta a história de Ash Ketchum em sua jornada na busca para se tornar um Mestre Pokémon. Pokémon é um grande anime, com centenas de episódios, além de alguns filmes e especiais, e continua tendo sucesso no Japão e no mundo.
                         </div>
                         <div id="aba2" class="tab-pane">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minima incidunt expedita possimus adipisci harum accusamus, ullam necessitatibus. Rerum aliquid repudiandae quis ab a. Sequi, aspernatur quis. Atque, voluptatibus tempore.
-                        </div>
+                            A série gira em torno das aventuras vividas por Naruto Uzumaki, um jovem órfão habitante da Aldeia da Folha que sonha em se tornar o quinto Hokage, o maior guerreiro e governante da vila. Ao se graduar como ninja, Naruto descobre que tem um demônio raposa selado dentro de si.
                         <div id="aba3" class="tab-pane">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a, reprehenderit, odio consequatur libero ab iusto quis necessitatibus at cum exercitationem illum vitae temporibus natus fugit quos, dicta commodi distinctio?
-                        </div>
+                            Yu Yu Hakusho é uma série de mangá shonen escrita e ilustrada por Yoshihiro Togashi que conta a história de Yusuke Urameshi, um delinquente de quatorze anos de idade (dezessete anos de idade na série live-action) que é atingido e morto por um carro ao tentar salvar a vida de uma criança.
                         <div id="aba4" class="tab-pane">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio eaque eum quos dolor architecto dignissimos a rem maiores. Vel odit totam repellat quisquam quas obcaecati molestias nobis itaque amet!
+                            Milhares de anos atrás, o imperador do mal Talpa pretendia conquistar a Terra. Derrotado, ele foi banido para o Reino Nether e sua armadura foi dividida em nove partes. Agora, ele voltou a conquistar a Terra, depois de ter recuperado 4 partes. As outras 5 estão na posse das pessoas que são a única esperança de pará-lo: The Warriors Ronin.
                         </div>
                         <div id="aba5" class="tab-pane">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil est maiores molestias molestiae commodi minus tenetur doloremque asperiores error praesentium, at, quae explicabo quisquam excepturi rem adipisci quidem tempora?
-                        </div>
+                            Enquanto Shurato luta com seu amigo num torneio, o espectador é obrigado a ouvir uma voz que repete um mantra em loop.
                         <div id="aba6" class="tab-pane">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero corporis molestiae, quibusdam asperiores quos earum obcaecati iusto in nam? Sint voluptatibus quibusdam ratione porro quas minus inventore at ullam possimus.
+                            Na trama de Digimon Adventure, um grupo de crianças é transportado para um mundo digital e cada uma forma um laço com um Digimon, criaturinhas mágicas capazes de evoluir dependendo da relação com cada um dos chamados “Digiescolhidos”.
                         </div>
                     </div>
                 </nav>
@@ -275,9 +275,9 @@
                                 Qual o valor mensal da ANIMESFLIX?
                             </button>
                         </div>
-                        <div class="accordion-collapse collapse show" id="resposta1">
+                        <div class="accordion-collapse collapse show btn btn-dark" id="resposta1">
                             <div class="accordion-body">
-                                Atualmente, a ANIMESFLIX não tem planos anuais. O plano mensal mais barato daANIMESFLIX custa a partir de R$ 18,90!
+                                Atualmente, a ANIMESFLIX não tem planos anuais. O plano mensal mais barato da ANIMESFLIX custa a partir de R$ 18,90!
                             </div>
                         </div>
                     </div>
@@ -287,9 +287,9 @@
                                 Quais são os planos que a ANIMESFLIX oferece?
                             </button>
                         </div>
-                        <div class="accordion-collapse collapse" id="resposta2">
+                        <div class="accordion-collapse collapse show btn btn-dark" id="resposta2">
                             <div class="accordion-body">
-                                Básico com anúncios (R$18,90) - 1 tela, resolução 720p e sem opção de download; Padrão (R$39,90) - 2 telas simultâneas, resolução 1080p e opção de download; Premium (R$55,90)- 4 telas simultâneas, resolução 4K + HDR e opção de download.
+                                Básico com anúncios (R$18,90): 1-tela, resolução 720p e sem opção de download; Padrão (R$39,90) - 2-telas simultâneas, resolução 1080p e opção de download; Premium (R$55,90)- 3-telas simultâneas, resolução 4K + HDR e opção de download.
                             </div>
                         </div>
                     </div>
@@ -299,7 +299,7 @@
                                 Quantas pessoas podem usar o ANIMESFLIX ao mesmo tempo?
                             </button>
                         </div>
-                        <div class="accordion-collapse collapse" id="resposta3">
+                        <div class="accordion-collapse collapse show btn btn-dark" id="resposta3">
                             <div class="accordion-body">
                                 No plano mais básico, apenas um aparelho pode se conectar à plataforma, enquanto o pacote mais caro permite até quatro telas assistindo àANIMESFLIX ao mesmo tempo.
                             </div>
@@ -311,9 +311,9 @@
                                 Tem como 2 pessoas usar ANIMESFLIX ao mesmo tempo?
                             </button>
                         </div>
-                        <div class="accordion-collapse collapse" id="resposta4">
+                        <div class="accordion-collapse collapse show btn btn-dark" id="resposta4">
                             <div class="accordion-body">
-                                Titulares de contas com plano Padrão ou Premium em vários países podem compartilhar aANIMESFLIX com alguém que não more na mesma casa. Para isso, basta adicionar um assinante extra à conta. Apenas titulares podem comprar o acesso de assinante extra e convidar alguém de fora da residência.
+                                Titulares de contas com plano Padrão ou Premium em vários países podem compartilhar a ANIMESFLIX com alguém que não more na mesma casa. Para isso, basta adicionar um assinante extra à conta. Apenas titulares podem comprar o acesso de assinante extra e convidar alguém de fora da residência.
                             </div>
                         </div>
                     </div>
@@ -342,6 +342,7 @@
                                 <div class="invalid-feedback">Você precisa concordar com os termos para enviar o formulário.</div>
                             </div>
                             <button type="submit" class="btn btn-success">Enviar</button>
+                            <button type="submit" class="btn btn-danger">Cancelar</button>
                         </form>
                     </div>
                 </div>
@@ -359,7 +360,7 @@
                     <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde odio saepe rem similique nam amet dolores facere. Voluptatem assumenda nihil repudiandae quas ipsum voluptates possimus et amet doloremque quae.
+                    Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você está ciente dessa funcionalidade. Informamos ainda que atualizamos nosso Aviso de Privacidade.. Conheça nosso Portal da Privacidade e veja o nosso novo Aviso.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Concordo</button>
